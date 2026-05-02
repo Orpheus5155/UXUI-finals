@@ -1,0 +1,33 @@
+{
+  "expo": {
+    "name": "smart-app",
+    "slug": "smart-app",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/images/appicon.png",
+    "userInterfaceStyle": "light",
+    "newArchEnabled": true,
+    "splash": {
+      "image": "./assets/images/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": true
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/images/appicon.png",
+        "backgroundColor": "#ffffff"
+      }
+    },
+    "web": {
+      "favicon": "./assets/images/appicon.png"
+    },
+    "sdkVersion": "54.0.0"
+
+  }
+}
