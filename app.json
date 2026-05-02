@@ -25,7 +25,8 @@
       }
     },
     "web": {
-      "favicon": "./assets/images/appicon.png"
+      "favicon": "./assets/images/appicon.png",
+      "bundler": "metro"
     },
     "sdkVersion": "54.0.0"
 
