@@ -9,4 +9,16 @@ export const Colors = {
   white: '#FFFFFF',
   black: '#000000',
   blueLight: '#EBF2FF',
+  // New colors from Figma reference
+  figmaBackground: '#f4f3f3',
+  mint: '#6ffbc3',
+  gray: '#9ca3af',
+  darkGray: '#4b5563',
+  figmaPrimary: '#2d62df',
+  figmaRed: '#f00000',
+  figmaLightBlue: '#6f93e9',
+  figmaBlue: '#4654f2',
+  pink: '#fa3594',
+  figmaLightPink: '#f4e9e9',
+  yellow: '#ffff0d',
 };

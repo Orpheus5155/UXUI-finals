@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { View, Text, StyleSheet, SafeAreaView, TouchableOpacity, ScrollView, ImageBackground, Image, Dimensions } from 'react-native';
+import { View, Text, StyleSheet, SafeAreaView, TouchableOpacity, ScrollView, ImageBackground, Image, Dimensions, Alert } from 'react-native';
 import { useNavigation } from '@react-navigation/native';
 import { 
   ChevronLeft, Bell, Wallet, History, BarChart3, Star, 
@@ -86,8 +86,8 @@ const ProfileScreen = () => {
           <View style={styles.section}>
             <View style={styles.sectionHeader}>
               <Text style={styles.sectionTitle}>Utilities</Text>
-              <TouchableOpacity onPress={() => setShowAllUtilities(p => !p)}>
-                <Text style={styles.seeMore}>{showAllUtilities ? 'See less' : 'See more'}</Text>
+              <TouchableOpacity onPress={() => navigation.navigate('AllUtilities' as never)}>
+                <Text style={styles.seeMore}>See more</Text>
               </TouchableOpacity>
             </View>
 
@@ -109,15 +109,30 @@ const ProfileScreen = () => {
                   <GridItem icon={<Tag size={24} color={Colors.white} />} label="Flash sale" />
                   <GridItem icon={<Ticket size={24} color={Colors.white} />} label="App Voucher" />
                   <GridItem icon={<Calculator size={24} color={Colors.white} />} label="Calculator" />
-                  <GridItem icon={<Receipt size={24} color={Colors.white} />} label="Bill Manage" />
+                  <GridItem 
+                    icon={<Receipt size={24} color={Colors.white} />} 
+                    label="Bill Manage" 
+                    onPress={() => {
+                      Alert.alert('Navigate', 'Going to Bill Overview');
+                      navigation.navigate('Overview' as never);
+                    }}
+                  />
                   <GridItem icon={<Bitcoin size={24} color={Colors.white} />} label="Crypto" />
-                  <GridItem icon={<MessageCircle size={24} color={Colors.white} />} label="Chatting" />
+                  <GridItem 
+                    icon={<MessageCircle size={24} color={Colors.white} />} 
+                    label="Chatting" 
+                    onPress={() => navigation.navigate('MessageMain' as never)}
+                  />
                   <GridItem icon={<PhoneCall size={24} color={Colors.white} />} label="Video call" />
                   <GridItem icon={<Rss size={24} color={Colors.white} />} label="Social feed" />
                   <GridItem icon={<Hotel size={24} color={Colors.white} />} label="Hotel booking" />
                   <GridItem icon={<Gamepad2 size={24} color={Colors.white} />} label="Game play" />
                   <GridItem icon={<Film size={24} color={Colors.white} />} label="Film HOT" />
-                  <GridItem icon={<Video size={24} color={Colors.white} />} label="Short video" />
+                  <GridItem 
+                    icon={<Video size={24} color={Colors.white} />} 
+                    label="Short video" 
+                    onPress={() => navigation.navigate('MainVideoFeed' as never)}
+                  />
                   <GridItem icon={<Sparkles size={24} color={Colors.white} />} label="Your AI" />
                 </>
               )}

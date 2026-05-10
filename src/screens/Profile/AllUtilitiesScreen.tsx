@@ -1,5 +1,5 @@
 import React from 'react';
-import { View, Text, StyleSheet, TouchableOpacity, ScrollView, Image, Dimensions } from 'react-native';
+import { View, Text, StyleSheet, TouchableOpacity, ScrollView, Image, Dimensions, Alert } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import { useNavigation } from '@react-navigation/native';
 import { 
@@ -74,9 +74,20 @@ const AllUtilitiesScreen = () => {
               <GridItem icon={<Ticket size={24} color={Colors.white} />} label="App Voucher" />
 
               <GridItem icon={<Calculator size={24} color={Colors.white} />} label="Calculator" />
-              <GridItem icon={<FileText size={24} color={Colors.white} />} label="Bill Manage" />
+              <GridItem 
+                icon={<FileText size={24} color={Colors.white} />} 
+                label="Bill Manage" 
+                onPress={() => {
+                  Alert.alert('Navigate', 'Going to Bill Overview');
+                  navigation.navigate('Overview' as never);
+                }}
+              />
               <GridItem icon={<Bitcoin size={24} color={Colors.white} />} label="Crypto" />
-              <GridItem icon={<MessageCircle size={24} color={Colors.white} />} label="Chatting" />
+              <GridItem 
+                icon={<MessageCircle size={24} color={Colors.white} />} 
+                label="Message" 
+                onPress={() => navigation.navigate('MessageMain' as never)}
+              />
 
               <GridItem icon={<Video size={24} color={Colors.white} />} label="Video call" />
               <GridItem icon={<Grid size={24} color={Colors.white} />} label="Social feed" />
@@ -84,7 +95,11 @@ const AllUtilitiesScreen = () => {
               <GridItem icon={<Gamepad size={24} color={Colors.white} />} label="Game play" />
 
               <GridItem icon={<Film size={24} color={Colors.white} />} label="Film HOT" />
-              <GridItem icon={<Video size={24} color={Colors.white} />} label="Short video" />
+              <GridItem 
+                icon={<Video size={24} color={Colors.white} />} 
+                label="Short video" 
+                onPress={() => navigation.navigate('MainVideoFeed' as never)}
+              />
               <GridItem icon={<Sparkles size={24} color={Colors.white} />} label="Your AI" />
               <GridItem icon={<ShoppingCart size={24} color={Colors.white} />} label="Shopping" />
             </View>
@@ -122,8 +137,8 @@ const ActionItem = ({ icon, label }: any) => (
   </TouchableOpacity>
 );
 
-const GridItem = ({ icon, label }: any) => (
-  <TouchableOpacity style={styles.gridItem}>
+const GridItem = ({ icon, label, onPress }: any) => (
+  <TouchableOpacity style={styles.gridItem} onPress={onPress}>
     <View style={styles.gridIconContainer}>{icon}</View>
     <Text style={styles.gridLabel}>{label}</Text>
   </TouchableOpacity>

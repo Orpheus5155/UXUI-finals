@@ -25,8 +25,31 @@ import SmartWalletStatisticsScreen from '../screens/Profile/SmartWalletStatistic
 import FastFoodScreen from '../screens/FastFood/FastFoodScreen';
 import FoodSearchScreen from '../screens/FastFood/FoodSearchScreen';
 
+import OverviewScreen from '../screens/Finance/OverviewScreen';
+import TotalExpenseSpendScreen from '../screens/Finance/TotalExpenseSpendScreen';
+import TotalExpenseCategoriesScreen from '../screens/Finance/TotalExpenseCategoriesScreen';
+import AddSelectScreen from '../screens/Finance/AddSelectScreen';
+import AddIncomeScreen from '../screens/Finance/AddIncomeScreen';
+import AddExpenseScreen from '../screens/Finance/AddExpenseScreen';
+import SavingsScreen from '../screens/Finance/SavingsScreen';
+import YourGoalsScreen from '../screens/Finance/YourGoalsScreen';
+import AddGoalScreen from '../screens/Finance/AddGoalScreen';
+import RemindersScreen from '../screens/Finance/RemindersScreen';
+import SetRemindersScreen from '../screens/Finance/SetRemindersScreen';
+import NotificationsScreen from '../screens/Finance/NotificationsScreen';
 
+import ProfileEditScreen from '../screens/Social/ProfileEditScreen';
+import ProfileVideoFeedScreen from '../screens/Social/ProfileVideoFeedScreen';
+import MainVideoFeedScreen from '../screens/Social/MainVideoFeedScreen';
+import MainVideoAddScreen from '../screens/Social/MainVideoAddScreen';
 
+import MessageMainScreen from '../screens/Messaging/MessageMainScreen';
+import MessageNewScreen from '../screens/Messaging/MessageNewScreen';
+import MessageTextScreen from '../screens/Messaging/MessageTextScreen';
+import MessageCameraScreen from '../screens/Messaging/MessageCameraScreen';
+import MessageVideoScreen from '../screens/Messaging/MessageVideoScreen';
+import MessageCallScreen from '../screens/Messaging/MessageCallScreen';
+import MessageUploadScreen from '../screens/Messaging/MessageUploadScreen';
 
 import RestaurantDetailScreen from '../screens/FastFood/RestaurantDetailScreen';
 import FoodDetailScreen from '../screens/FastFood/FoodDetailScreen';
@@ -57,6 +80,29 @@ export type RootStackParamList = {
   ExploreMovie: undefined;
   EditProfile: undefined;
   AllUtilities: undefined;
+  Overview: undefined;
+  TotalExpenseSpend: undefined;
+  TotalExpenseCategories: undefined;
+  AddSelect: undefined;
+  AddIncome: undefined;
+  AddExpense: undefined;
+  Savings: undefined;
+  YourGoals: undefined;
+  AddGoal: undefined;
+  Reminders: undefined;
+  SetReminders: undefined;
+  Notifications: undefined;
+  ProfileVideoFeed: undefined;
+  MainVideoFeed: undefined;
+  MainVideoAdd: undefined;
+  ProfileEdit: undefined;
+  MessageMain: undefined;
+  MessageNew: undefined;
+  MessageText: undefined;
+  MessageCamera: undefined;
+  MessageVideo: undefined;
+  MessageCall: undefined;
+  MessageUpload: undefined;
 };
 
 export type TabParamList = {
@@ -131,6 +177,31 @@ const RootNavigator = () => (
       <Stack.Screen name="SmartWalletHistory" component={SmartWalletHistoryScreen} />
       <Stack.Screen name="TransactionDetail" component={TransactionDetailScreen} />
       <Stack.Screen name="SmartWalletStatistics" component={SmartWalletStatisticsScreen} />
+      
+      <Stack.Screen name="Overview" component={OverviewScreen} />
+      <Stack.Screen name="TotalExpenseSpend" component={TotalExpenseSpendScreen} />
+      <Stack.Screen name="TotalExpenseCategories" component={TotalExpenseCategoriesScreen} />
+      <Stack.Screen name="AddSelect" component={AddSelectScreen} />
+      <Stack.Screen name="AddIncome" component={AddIncomeScreen} />
+      <Stack.Screen name="AddExpense" component={AddExpenseScreen} />
+      <Stack.Screen name="Savings" component={SavingsScreen} />
+      <Stack.Screen name="YourGoals" component={YourGoalsScreen} />
+      <Stack.Screen name="AddGoal" component={AddGoalScreen} />
+      <Stack.Screen name="Reminders" component={RemindersScreen} />
+      <Stack.Screen name="SetReminders" component={SetRemindersScreen} />
+      <Stack.Screen name="Notifications" component={NotificationsScreen} />
+
+      <Stack.Screen name="ProfileVideoFeed" component={ProfileVideoFeedScreen} />
+      <Stack.Screen name="MainVideoFeed" component={MainVideoFeedScreen} />
+      <Stack.Screen name="MainVideoAdd" component={MainVideoAddScreen} />
+      <Stack.Screen name="ProfileEdit" component={ProfileEditScreen} />
+      <Stack.Screen name="MessageMain" component={MessageMainScreen} />
+      <Stack.Screen name="MessageNew" component={MessageNewScreen} />
+      <Stack.Screen name="MessageText" component={MessageTextScreen} />
+      <Stack.Screen name="MessageCamera" component={MessageCameraScreen} />
+      <Stack.Screen name="MessageVideo" component={MessageVideoScreen} />
+      <Stack.Screen name="MessageCall" component={MessageCallScreen} />
+      <Stack.Screen name="MessageUpload" component={MessageUploadScreen} />
     </Stack.Navigator>
 
 
