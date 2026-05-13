@@ -58,9 +58,17 @@ const AllUtilitiesScreen = () => {
               </TouchableOpacity>
             </View>
             <View style={styles.grid}>
-              <GridItem icon={<Bike size={24} color={Colors.white} />} label="SMart Bike" />
-              <GridItem icon={<Car size={24} color={Colors.white} />} label="SMart Car" />
-              <GridItem icon={<Ticket size={24} color={Colors.white} />} label="Bus ticket" />
+              <GridItem icon={<Bike size={24} color={Colors.white} />} label="SMart Bike" onPress={() => navigation.navigate('SmartBikeHome' as never)} />
+              <GridItem
+                icon={<Car size={24} color={Colors.white} />}
+                label="SMart Car"
+                onPress={() => navigation.navigate('CarHome' as never)}
+              />
+              <GridItem
+                icon={<Ticket size={24} color={Colors.white} />}
+                label="Bus ticket"
+                onPress={() => navigation.navigate('BusHome' as never)}
+              />
               <GridItem icon={<Plane size={24} color={Colors.white} />} label="Airplane ticket" />
               
               <GridItem icon={<Train size={24} color={Colors.white} />} label="Train ticket" />

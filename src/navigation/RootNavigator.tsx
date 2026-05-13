@@ -60,6 +60,36 @@ import PaymentSuccessScreen from '../screens/FastFood/PaymentSuccessScreen';
 import CinemaScreen from '../screens/Cinema/CinemaScreen';
 import ExploreMovieScreen from '../screens/Cinema/ExploreMovieScreen';
 
+import SmartBikeHomeScreen from '../screens/SmartBike/SmartBikeHomeScreen';
+import SmartBikeProductScreen from '../screens/SmartBike/SmartBikeProductScreen';
+import SmartBikeProductDescScreen from '../screens/SmartBike/SmartBikeProductDescScreen';
+import SmartBikeCartScreen from '../screens/SmartBike/SmartBikeCartScreen';
+import SmartBikeCartCouponScreen from '../screens/SmartBike/SmartBikeCartCouponScreen';
+import SmartBikeCartCouponAppliedScreen from '../screens/SmartBike/SmartBikeCartCouponAppliedScreen';
+import SmartBikeCartCouponCheckoutSwipedScreen from '../screens/SmartBike/SmartBikeCartCouponCheckoutSwipedScreen';
+import SmartBikeCheckoutScreen from '../screens/SmartBike/SmartBikeCheckoutScreen';
+import SmartBikeCheckoutPinScreen from '../screens/SmartBike/SmartBikeCheckoutPinScreen';
+import SmartBikePaymentSuccessScreen from '../screens/SmartBike/SmartBikePaymentSuccessScreen';
+
+import BusHomePageScreen from '../screens/Bus/BusHomePageScreen';
+import BusBookingPageScreen from '../screens/Bus/BusBookingPageScreen';
+import BusSeatSelectionScreen from '../screens/Bus/BusSeatSelectionScreen';
+import BusBoardingDropDetailsScreen from '../screens/Bus/BusBoardingDropDetailsScreen';
+import BusGuestDetailsScreen from '../screens/Bus/BusGuestDetailsScreen';
+import BusPaymentScreen from '../screens/Bus/BusPaymentScreen';
+import BusVerifyPinScreen from '../screens/Bus/BusVerifyPinScreen';
+import BusPaymentSuccessScreen from '../screens/Bus/BusPaymentSuccessScreen';
+
+import CarHomeScreen from '../screens/Car/CarHomeScreen';
+import CarLamboScreen from '../screens/Car/CarLamboScreen';
+import CarBugattiScreen from '../screens/Car/CarBugattiScreen';
+import CarAudiScreen from '../screens/Car/CarAudiScreen';
+import CarGetScreen from '../screens/Car/CarGetScreen';
+import CarDetailScreen from '../screens/Car/CarDetailScreen';
+import CarPaymentScreen from '../screens/Car/CarPaymentScreen';
+import CarVerifyPinScreen from '../screens/Car/CarVerifyPinScreen';
+import CarPaymentSuccessScreen from '../screens/Car/CarPaymentSuccessScreen';
+
 import { Colors } from '../theme/colors';
 
 export type RootStackParamList = {
@@ -103,6 +133,33 @@ export type RootStackParamList = {
   MessageVideo: undefined;
   MessageCall: undefined;
   MessageUpload: undefined;
+  SmartBikeHome: undefined;
+  SmartBikeProduct: undefined;
+  SmartBikeProductDesc: undefined;
+  SmartBikeCart: undefined;
+  SmartBikeCartCoupon: undefined;
+  SmartBikeCartCouponApplied: undefined;
+  SmartBikeCartCouponCheckoutSwiped: undefined;
+  SmartBikeCheckout: undefined;
+  SmartBikeCheckoutPin: undefined;
+  SmartBikePaymentSuccess: undefined;
+  BusHome: undefined;
+  BusBooking: undefined;
+  BusSeatSelection: undefined;
+  BusBoardingDrop: undefined;
+  BusGuestDetails: undefined;
+  BusPayment: undefined;
+  BusVerifyPin: undefined;
+  BusPaymentSuccess: undefined;
+  CarHome: undefined;
+  CarLambo: undefined;
+  CarBugatti: undefined;
+  CarAudi: undefined;
+  CarGet: undefined;
+  CarDetail: undefined;
+  CarPayment: undefined;
+  CarVerifyPin: undefined;
+  CarPaymentSuccess: undefined;
 };
 
 export type TabParamList = {
@@ -202,6 +259,33 @@ const RootNavigator = () => (
       <Stack.Screen name="MessageVideo" component={MessageVideoScreen} />
       <Stack.Screen name="MessageCall" component={MessageCallScreen} />
       <Stack.Screen name="MessageUpload" component={MessageUploadScreen} />
+      <Stack.Screen name="SmartBikeHome" component={SmartBikeHomeScreen} />
+      <Stack.Screen name="SmartBikeProduct" component={SmartBikeProductScreen} />
+      <Stack.Screen name="SmartBikeProductDesc" component={SmartBikeProductDescScreen} />
+      <Stack.Screen name="SmartBikeCart" component={SmartBikeCartScreen} />
+      <Stack.Screen name="SmartBikeCartCoupon" component={SmartBikeCartCouponScreen} />
+      <Stack.Screen name="SmartBikeCartCouponApplied" component={SmartBikeCartCouponAppliedScreen} />
+      <Stack.Screen name="SmartBikeCartCouponCheckoutSwiped" component={SmartBikeCartCouponCheckoutSwipedScreen} />
+      <Stack.Screen name="SmartBikeCheckout" component={SmartBikeCheckoutScreen} />
+      <Stack.Screen name="SmartBikeCheckoutPin" component={SmartBikeCheckoutPinScreen} />
+      <Stack.Screen name="SmartBikePaymentSuccess" component={SmartBikePaymentSuccessScreen} />
+      <Stack.Screen name="BusHome" component={BusHomePageScreen} />
+      <Stack.Screen name="BusBooking" component={BusBookingPageScreen} />
+      <Stack.Screen name="BusSeatSelection" component={BusSeatSelectionScreen} />
+      <Stack.Screen name="BusBoardingDrop" component={BusBoardingDropDetailsScreen} />
+      <Stack.Screen name="BusGuestDetails" component={BusGuestDetailsScreen} />
+      <Stack.Screen name="BusPayment" component={BusPaymentScreen} />
+      <Stack.Screen name="BusVerifyPin" component={BusVerifyPinScreen} />
+      <Stack.Screen name="BusPaymentSuccess" component={BusPaymentSuccessScreen} />
+      <Stack.Screen name="CarHome" component={CarHomeScreen} />
+      <Stack.Screen name="CarLambo" component={CarLamboScreen} />
+      <Stack.Screen name="CarBugatti" component={CarBugattiScreen} />
+      <Stack.Screen name="CarAudi" component={CarAudiScreen} />
+      <Stack.Screen name="CarGet" component={CarGetScreen} />
+      <Stack.Screen name="CarDetail" component={CarDetailScreen} />
+      <Stack.Screen name="CarPayment" component={CarPaymentScreen} />
+      <Stack.Screen name="CarVerifyPin" component={CarVerifyPinScreen} />
+      <Stack.Screen name="CarPaymentSuccess" component={CarPaymentSuccessScreen} />
     </Stack.Navigator>
 
 
